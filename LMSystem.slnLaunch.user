@@ -1,0 +1,23 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "iam-service\\iam-service.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Patient-service\\Patient-service.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "api-gateway\\api-gateway.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Testorder-service\\Testorder-service.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

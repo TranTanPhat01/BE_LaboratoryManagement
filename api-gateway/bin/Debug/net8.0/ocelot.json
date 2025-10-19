@@ -1,0 +1,49 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/patient/{everything}",
+      "UpstreamPathTemplate": "/gateway/patient/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "ServiceName": "patients-service",
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UseServiceDiscovery": true,
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "JwtBearer",
+        "AllowedScopes": []
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 5000,
+        "TimeoutValue": 10000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/iam/{everything}",
+      "UpstreamPathTemplate": "/gateway/iam/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "ServiceName": "iam-service",
+      "UseServiceDiscovery": true,
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "JwtBearer",
+        "AllowedScopes": []
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 5,
+        "DurationOfBreak": 3000,
+        "TimeoutValue": 8000
+      }
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:7000",
+    "RequestIdKey": "OcRequestId",
+    "ServiceDiscoveryProvider": {
+      "Type": "Consul",
+      "Host": "localhost",
+      "Port": 8500,
+      "PollingInterval": 10000
+    }
+  }
+}

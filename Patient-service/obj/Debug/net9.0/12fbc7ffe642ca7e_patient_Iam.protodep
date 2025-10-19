@@ -1,0 +1,2 @@
+obj\Debug\net9.0\Protos/PatientIam.cs \
+obj\Debug\net9.0\Protos/PatientIamGrpc.cs: Protos/patient_Iam.proto

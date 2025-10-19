@@ -1,0 +1,53 @@
+syntax = "proto3";
+package ev.v1.patient;
+option csharp_namespace = "PatientServer";
+
+import "google/protobuf/timestamp.proto";
+import "common.proto";
+
+service PatientService {
+  rpc CreatePatient(CreatePatientRequest) returns (PatientResponse);
+  rpc GetPatient(ev.v1.common.GetByIdRequest) returns (PatientResponse);
+  rpc UpdatePatient(UpdatePatientRequest) returns (PatientResponse);
+  rpc ListPatients(ListPatientsRequest) returns (ListPatientsResponse);
+}
+message Patient {
+  string id = 1;
+  string patient_code = 2;
+  string fullname = 3;
+  string dob = 4; // DateOnly as "YYYY-MM-DD"
+  string gender = 5;
+  string phone = 6;
+  string email = 7;
+  string address = 8;
+  string blood_type = 9;
+  string identity_number = 10;
+  google.protobuf.Timestamp created_at = 11;
+  google.protobuf.Timestamp updated_at = 12;
+  string medical_history = 13;
+  string created_by = 14;
+}
+
+message CreatePatientRequest {
+  Patient patient = 1;
+}
+
+message UpdatePatientRequest {
+  Patient patient = 1;
+}
+
+message PatientResponse {
+  Patient patient = 1;
+  string error = 2; // optional error message
+}
+
+message ListPatientsRequest {
+  int32 page = 1;
+  int32 page_size = 2;
+  string query = 3;
+}
+
+message ListPatientsResponse {
+  repeated Patient patients = 1;
+  int32 total = 2;
+}

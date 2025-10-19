@@ -1,0 +1,2 @@
+obj\Debug\net9.0\Protos/Common.cs: C:/Users/Admin/.nuget/packages/grpc.tools/2.72.0/build/native/include/google/protobuf/timestamp.proto\
+ Protos/common.proto

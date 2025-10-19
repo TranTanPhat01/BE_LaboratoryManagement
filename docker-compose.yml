@@ -1,0 +1,111 @@
+﻿services:
+  # Dịch vụ Cơ sở Dữ liệu SQL Server
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:20220-latest
+    container_name: sqlserver
+    environment:
+      SA_PASSWORD: "Admin@123"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    networks:
+      - lm-network
+    # Cập nhật Healthcheck: Sử dụng lệnh sqlcmd để kiểm tra kết nối DB.
+    healthcheck:
+      test: [
+        "CMD", 
+        "/opt/mssql-tools/bin/sqlcmd", 
+        "-S", "localhost", 
+        "-U", "sa", 
+        "-P", "Admin@123", 
+        "-Q", "SELECT 1"
+      ]
+      interval: 10s
+      retries: 5
+      timeout: 5s
+      start_period: 30s # Tăng thời gian chờ khởi động ban đầu
+
+  # Dịch vụ Service Discovery Consul
+  consul:
+    image: hashicorp/consul:1.19.2
+    container_name: consul
+    command: agent -dev -client=0.0.0.0
+    ports:
+      - "8500:8500" # Cổng UI và API
+      - "8600:8600/udp" # Cổng DNS
+    networks:
+      - lm-network
+
+  # Dịch vụ Hàng đợi RabbitMQ
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672" # Cổng AMQP
+      - "15672:15672" # Cổng Quản lý (Web UI)
+    networks:
+      - lm-network
+
+  # Dịch vụ Cache Redis
+  redis:
+    image: redis:7
+    container_name: redis
+    ports:
+      - "6379:6379"
+    networks:
+      - lm-network
+
+  # Dịch vụ Quản lý Người dùng (IAM Service)
+  iam-service:
+    build:
+      context: ./iam-service
+      dockerfile: Dockerfile
+    container_name: iam-service
+    ports:
+      - "7020:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:8080
+      # Kết nối DB: sử dụng tên dịch vụ 'sqlserver'
+      - ConnectionStrings__DefaultConnection=Server=sqlserver,1433;Database=UserManagementDB;User Id=sa;Password=Admin@123;TrustServerCertificate=True;
+      # Cấu hình Consul
+      - ConsulConfig__Address=http://consul:8500
+      - ConsulConfig__ServiceHost=iam-service
+      - ConsulConfig__ServicePort=8080
+      - ConsulConfig__ServiceName=iam-service
+      - ConsulConfig__ServiceId=iam-service-1
+      - ConsulConfig__HealthCheckEndpoint=/health
+    depends_on:
+      sqlserver:
+        condition: service_healthy # Chờ SQL Server sẵn sàng
+      consul:
+        condition: service_started
+      rabbitmq:
+        condition: service_started
+    networks:
+      - lm-network
+
+  # Dịch vụ API Gateway
+  api-gateway:
+    build:
+      context: ./api-gateway
+      dockerfile: Dockerfile
+    container_name: api-gateway
+    ports:
+      - "7000:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:8080
+    depends_on:
+      iam-service:
+        condition: service_started
+      consul:
+        condition: service_started
+    volumes:
+      - ./data-keys:/root/.aspnet/DataProtection-Keys # Lưu trữ khóa mã hóa
+    networks:
+      - lm-network
+
+networks:
+  lm-network:
+    driver: bridge

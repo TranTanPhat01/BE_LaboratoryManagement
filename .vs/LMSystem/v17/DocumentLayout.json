@@ -1,0 +1,658 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Docker{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Docker{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74FE620E-8AB9-4240-8045-73BF25E95492}|api-gateway\\api-gateway.csproj|d:\\project\\lmsystem (4)\\lmsystem (1)\\lmsystem\\api-gateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74FE620E-8AB9-4240-8045-73BF25E95492}|api-gateway\\api-gateway.csproj|solutionrelative:api-gateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74FE620E-8AB9-4240-8045-73BF25E95492}|api-gateway\\api-gateway.csproj|d:\\project\\lmsystem (4)\\lmsystem (1)\\lmsystem\\api-gateway\\ocelot.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{74FE620E-8AB9-4240-8045-73BF25E95492}|api-gateway\\api-gateway.csproj|solutionrelative:api-gateway\\ocelot.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74FE620E-8AB9-4240-8045-73BF25E95492}|api-gateway\\api-gateway.csproj|d:\\project\\lmsystem (4)\\lmsystem (1)\\lmsystem\\api-gateway\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{74FE620E-8AB9-4240-8045-73BF25E95492}|api-gateway\\api-gateway.csproj|solutionrelative:api-gateway\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74FE620E-8AB9-4240-8045-73BF25E95492}|api-gateway\\api-gateway.csproj|d:\\project\\lmsystem (4)\\lmsystem (1)\\lmsystem\\api-gateway\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{74FE620E-8AB9-4240-8045-73BF25E95492}|api-gateway\\api-gateway.csproj|solutionrelative:api-gateway\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74FE620E-8AB9-4240-8045-73BF25E95492}|api-gateway\\api-gateway.csproj|d:\\project\\lmsystem (4)\\lmsystem (1)\\lmsystem\\api-gateway\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{74FE620E-8AB9-4240-8045-73BF25E95492}|api-gateway\\api-gateway.csproj|solutionrelative:api-gateway\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32683153-0C0B-4F1C-A09A-34F954E9904F}|Patient-service\\Patient-service.csproj|d:\\project\\lmsystem (4)\\lmsystem (1)\\lmsystem\\patient-service\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{32683153-0C0B-4F1C-A09A-34F954E9904F}|Patient-service\\Patient-service.csproj|solutionrelative:patient-service\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75E725CC-94B2-4FD5-9267-F94A7FF09D96}|iam-service\\iam-service.csproj|d:\\project\\lmsystem (4)\\lmsystem (1)\\lmsystem\\iam-service\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{75E725CC-94B2-4FD5-9267-F94A7FF09D96}|iam-service\\iam-service.csproj|solutionrelative:iam-service\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75E725CC-94B2-4FD5-9267-F94A7FF09D96}|iam-service\\iam-service.csproj|d:\\project\\lmsystem (4)\\lmsystem (1)\\lmsystem\\iam-service\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{75E725CC-94B2-4FD5-9267-F94A7FF09D96}|iam-service\\iam-service.csproj|solutionrelative:iam-service\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|d:\\project\\lmsystem (4)\\lmsystem (1)\\lmsystem\\testorder-service\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|solutionrelative:testorder-service\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|d:\\project\\lmsystem (4)\\lmsystem (1)\\lmsystem\\testorder-service\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|solutionrelative:testorder-service\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32683153-0C0B-4F1C-A09A-34F954E9904F}|Patient-service\\Patient-service.csproj|d:\\project\\lmsystem (4)\\lmsystem (1)\\lmsystem\\patient-service\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32683153-0C0B-4F1C-A09A-34F954E9904F}|Patient-service\\Patient-service.csproj|solutionrelative:patient-service\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75E725CC-94B2-4FD5-9267-F94A7FF09D96}|iam-service\\iam-service.csproj|d:\\project\\lmsystem (4)\\lmsystem (1)\\lmsystem\\iam-service\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75E725CC-94B2-4FD5-9267-F94A7FF09D96}|iam-service\\iam-service.csproj|solutionrelative:iam-service\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|d:\\project\\lmsystem (4)\\lmsystem (1)\\lmsystem\\testorder-service\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|solutionrelative:testorder-service\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32683153-0C0B-4F1C-A09A-34F954E9904F}|Patient-service\\Patient-service.csproj|d:\\project\\lmsystem (4)\\lmsystem (1)\\lmsystem\\patient-service\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{32683153-0C0B-4F1C-A09A-34F954E9904F}|Patient-service\\Patient-service.csproj|solutionrelative:patient-service\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32683153-0C0B-4F1C-A09A-34F954E9904F}|Patient-service\\Patient-service.csproj|d:\\project\\lmsystem (4)\\lmsystem (1)\\lmsystem\\patient-service\\patient-service.csproj.backup (1).tmp||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{32683153-0C0B-4F1C-A09A-34F954E9904F}|Patient-service\\Patient-service.csproj|solutionrelative:patient-service\\patient-service.csproj.backup (1).tmp||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75E725CC-94B2-4FD5-9267-F94A7FF09D96}|iam-service\\iam-service.csproj|d:\\project\\lmsystem (4)\\lmsystem (1)\\lmsystem\\iam-service\\iam-service.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{75E725CC-94B2-4FD5-9267-F94A7FF09D96}|iam-service\\iam-service.csproj|solutionrelative:iam-service\\iam-service.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|d:\\project\\lmsystem (4)\\lmsystem (1)\\lmsystem\\testorder-service\\testorder-service.csproj.backup.tmp||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|solutionrelative:testorder-service\\testorder-service.csproj.backup.tmp||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|d:\\project\\lmsystem (4)\\lmsystem (1)\\lmsystem\\testorder-service\\repositories\\implement\\bloodsamplerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|solutionrelative:testorder-service\\repositories\\implement\\bloodsamplerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|d:\\project\\lmsystem (4)\\lmsystem (1)\\lmsystem\\testorder-service\\mapping\\profiles\\bloodsamplesprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|solutionrelative:testorder-service\\mapping\\profiles\\bloodsamplesprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|d:\\project\\lmsystem (4)\\lmsystem (1)\\lmsystem\\testorder-service\\controllers\\testresultscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|solutionrelative:testorder-service\\controllers\\testresultscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|d:\\project\\lmsystem (4)\\lmsystem (1)\\lmsystem\\testorder-service\\controllers\\samplescontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|solutionrelative:testorder-service\\controllers\\samplescontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|d:\\project\\lmsystem (4)\\lmsystem (1)\\lmsystem\\testorder-service\\controllers\\testparameterscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|solutionrelative:testorder-service\\controllers\\testparameterscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|d:\\project\\lmsystem (4)\\lmsystem (1)\\lmsystem\\testorder-service\\controllers\\resultcommentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|solutionrelative:testorder-service\\controllers\\resultcommentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|d:\\project\\lmsystem (4)\\lmsystem (1)\\lmsystem\\testorder-service\\controllers\\flagginglogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|solutionrelative:testorder-service\\controllers\\flagginglogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|d:\\project\\lmsystem (4)\\lmsystem (1)\\lmsystem\\testorder-service\\controllers\\flaggingconfigscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|solutionrelative:testorder-service\\controllers\\flaggingconfigscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|d:\\project\\lmsystem (4)\\lmsystem (1)\\lmsystem\\testorder-service\\service\\implement\\resultcommentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|solutionrelative:testorder-service\\service\\implement\\resultcommentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|d:\\project\\lmsystem (4)\\lmsystem (1)\\lmsystem\\testorder-service\\service\\implement\\flagginglogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|solutionrelative:testorder-service\\service\\implement\\flagginglogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|d:\\project\\lmsystem (4)\\lmsystem (1)\\lmsystem\\testorder-service\\service\\implement\\flaggingconfigservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|solutionrelative:testorder-service\\service\\implement\\flaggingconfigservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|d:\\project\\lmsystem (4)\\lmsystem (1)\\lmsystem\\testorder-service\\service\\implement\\testparameterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|solutionrelative:testorder-service\\service\\implement\\testparameterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|d:\\project\\lmsystem (4)\\lmsystem (1)\\lmsystem\\testorder-service\\service\\implement\\testresultservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|solutionrelative:testorder-service\\service\\implement\\testresultservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|d:\\project\\lmsystem (4)\\lmsystem (1)\\lmsystem\\testorder-service\\service\\implement\\bloodsampleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|solutionrelative:testorder-service\\service\\implement\\bloodsampleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|d:\\project\\lmsystem (4)\\lmsystem (1)\\lmsystem\\testorder-service\\mapping\\profiles\\resultcommentsprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|solutionrelative:testorder-service\\mapping\\profiles\\resultcommentsprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|d:\\project\\lmsystem (4)\\lmsystem (1)\\lmsystem\\testorder-service\\mapping\\profiles\\flagginglogsprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|solutionrelative:testorder-service\\mapping\\profiles\\flagginglogsprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|d:\\project\\lmsystem (4)\\lmsystem (1)\\lmsystem\\testorder-service\\mapping\\profiles\\flaggingconfigsprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|solutionrelative:testorder-service\\mapping\\profiles\\flaggingconfigsprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|d:\\project\\lmsystem (4)\\lmsystem (1)\\lmsystem\\testorder-service\\mapping\\profiles\\testparametersprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|solutionrelative:testorder-service\\mapping\\profiles\\testparametersprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|d:\\project\\lmsystem (4)\\lmsystem (1)\\lmsystem\\testorder-service\\mapping\\profiles\\testresultsprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|solutionrelative:testorder-service\\mapping\\profiles\\testresultsprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|d:\\project\\lmsystem (4)\\lmsystem (1)\\lmsystem\\testorder-service\\mapping\\converters\\stringtolocaldatetime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB823EE7-495C-4F14-975D-E24C3CCA5359}|Testorder-service\\Testorder-service.csproj|solutionrelative:testorder-service\\mapping\\converters\\stringtolocaldatetime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32683153-0C0B-4F1C-A09A-34F954E9904F}|Patient-service\\Patient-service.csproj|d:\\project\\lmsystem (4)\\lmsystem (1)\\lmsystem\\patient-service\\mappingprofiles\\patientmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32683153-0C0B-4F1C-A09A-34F954E9904F}|Patient-service\\Patient-service.csproj|solutionrelative:patient-service\\mappingprofiles\\patientmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 362,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\docker-compose.yml",
+              "RelativeDocumentMoniker": "docker-compose.yml",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\docker-compose.yml",
+              "RelativeToolTip": "docker-compose.yml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAuwDQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2025-10-18T10:32:19.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\api-gateway\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "api-gateway\\appsettings.Development.json",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\api-gateway\\appsettings.Development.json",
+              "RelativeToolTip": "api-gateway\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-17T03:50:51.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Patient-service\\Program.cs",
+              "RelativeDocumentMoniker": "Patient-service\\Program.cs",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Patient-service\\Program.cs",
+              "RelativeToolTip": "Patient-service\\Program.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAkwHgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T02:33:38.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\api-gateway\\Program.cs",
+              "RelativeDocumentMoniker": "api-gateway\\Program.cs",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\api-gateway\\Program.cs",
+              "RelativeToolTip": "api-gateway\\Program.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T02:32:58.061Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\api-gateway\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "api-gateway\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\api-gateway\\Properties\\launchSettings.json",
+              "RelativeToolTip": "api-gateway\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-17T01:25:49.675Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ocelot.json",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\api-gateway\\ocelot.json",
+              "RelativeDocumentMoniker": "api-gateway\\ocelot.json",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\api-gateway\\ocelot.json",
+              "RelativeToolTip": "api-gateway\\ocelot.json",
+              "ViewState": "AgIAAAsBAAAAAAAAAAAAACYBAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-17T01:25:42.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\api-gateway\\appsettings.json",
+              "RelativeDocumentMoniker": "api-gateway\\appsettings.json",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\api-gateway\\appsettings.json",
+              "RelativeToolTip": "api-gateway\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-17T01:25:39.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Patient-service\\appsettings.json",
+              "RelativeDocumentMoniker": "Patient-service\\appsettings.json",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Patient-service\\appsettings.json",
+              "RelativeToolTip": "Patient-service\\appsettings.json",
+              "ViewState": "AgIAABQAAAAAAAAAAAAuwBYAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-17T01:24:40.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Patient-service.csproj.Backup (1).tmp",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Patient-service\\Patient-service.csproj.Backup (1).tmp",
+              "RelativeDocumentMoniker": "Patient-service\\Patient-service.csproj.Backup (1).tmp",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Patient-service\\Patient-service.csproj.Backup (1).tmp",
+              "RelativeToolTip": "Patient-service\\Patient-service.csproj.Backup (1).tmp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-17T01:24:40.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Patient-service\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Patient-service\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Patient-service\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Patient-service\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAkwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-17T01:23:52.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\iam-service\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "iam-service\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\iam-service\\Properties\\launchSettings.json",
+              "RelativeToolTip": "iam-service\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-17T01:20:37.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "iam-service",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\iam-service\\iam-service.csproj",
+              "RelativeDocumentMoniker": "iam-service\\iam-service.csproj",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\iam-service\\iam-service.csproj",
+              "RelativeToolTip": "iam-service\\iam-service.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-17T01:20:37.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\iam-service\\appsettings.json",
+              "RelativeDocumentMoniker": "iam-service\\appsettings.json",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\iam-service\\appsettings.json",
+              "RelativeToolTip": "iam-service\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-17T01:20:14.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Testorder-service\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Testorder-service\\Properties\\launchSettings.json",
+              "ViewState": "AgIAABMAAAAAAAAAAAAkwB8AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-17T01:20:10.443Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\iam-service\\Program.cs",
+              "RelativeDocumentMoniker": "iam-service\\Program.cs",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\iam-service\\Program.cs",
+              "RelativeToolTip": "iam-service\\Program.cs",
+              "ViewState": "AgIAAKcAAAAAAAAAAAAkwLwAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T10:03:46.603Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Testorder-service.csproj.Backup.tmp",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Testorder-service.csproj.Backup.tmp",
+              "RelativeDocumentMoniker": "Testorder-service\\Testorder-service.csproj.Backup.tmp",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Testorder-service.csproj.Backup.tmp",
+              "RelativeToolTip": "Testorder-service\\Testorder-service.csproj.Backup.tmp",
+              "ViewState": "AgIAABsAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-16T10:01:06.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "BloodSampleRepository.cs",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Repositories\\Implement\\BloodSampleRepository.cs",
+              "RelativeDocumentMoniker": "Testorder-service\\Repositories\\Implement\\BloodSampleRepository.cs",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Repositories\\Implement\\BloodSampleRepository.cs",
+              "RelativeToolTip": "Testorder-service\\Repositories\\Implement\\BloodSampleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T10:00:48.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ResultCommentsController.cs",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Controllers\\ResultCommentsController.cs",
+              "RelativeDocumentMoniker": "Testorder-service\\Controllers\\ResultCommentsController.cs",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Controllers\\ResultCommentsController.cs",
+              "RelativeToolTip": "Testorder-service\\Controllers\\ResultCommentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T09:54:59.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "FlaggingLogsController.cs",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Controllers\\FlaggingLogsController.cs",
+              "RelativeDocumentMoniker": "Testorder-service\\Controllers\\FlaggingLogsController.cs",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Controllers\\FlaggingLogsController.cs",
+              "RelativeToolTip": "Testorder-service\\Controllers\\FlaggingLogsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T09:54:22.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "FlaggingConfigsController.cs",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Controllers\\FlaggingConfigsController.cs",
+              "RelativeDocumentMoniker": "Testorder-service\\Controllers\\FlaggingConfigsController.cs",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Controllers\\FlaggingConfigsController.cs",
+              "RelativeToolTip": "Testorder-service\\Controllers\\FlaggingConfigsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T09:53:40.878Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "TestParametersController.cs",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Controllers\\TestParametersController.cs",
+              "RelativeDocumentMoniker": "Testorder-service\\Controllers\\TestParametersController.cs",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Controllers\\TestParametersController.cs",
+              "RelativeToolTip": "Testorder-service\\Controllers\\TestParametersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T09:52:52.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "TestResultsController.cs",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Controllers\\TestResultsController.cs",
+              "RelativeDocumentMoniker": "Testorder-service\\Controllers\\TestResultsController.cs",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Controllers\\TestResultsController.cs",
+              "RelativeToolTip": "Testorder-service\\Controllers\\TestResultsController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwCUAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T09:51:45.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SamplesController .cs",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Controllers\\SamplesController .cs",
+              "RelativeDocumentMoniker": "Testorder-service\\Controllers\\SamplesController .cs",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Controllers\\SamplesController .cs",
+              "RelativeToolTip": "Testorder-service\\Controllers\\SamplesController .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T09:42:57.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\appsettings.json",
+              "RelativeDocumentMoniker": "Testorder-service\\appsettings.json",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\appsettings.json",
+              "RelativeToolTip": "Testorder-service\\appsettings.json",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABAAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-16T08:22:40.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ResultCommentService.cs",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Service\\Implement\\ResultCommentService.cs",
+              "RelativeDocumentMoniker": "Testorder-service\\Service\\Implement\\ResultCommentService.cs",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Service\\Implement\\ResultCommentService.cs",
+              "RelativeToolTip": "Testorder-service\\Service\\Implement\\ResultCommentService.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowCUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T06:38:36.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "TestParameterService.cs",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Service\\Implement\\TestParameterService.cs",
+              "RelativeDocumentMoniker": "Testorder-service\\Service\\Implement\\TestParameterService.cs",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Service\\Implement\\TestParameterService.cs",
+              "RelativeToolTip": "Testorder-service\\Service\\Implement\\TestParameterService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T06:39:27.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "TestResultService.cs",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Service\\Implement\\TestResultService.cs",
+              "RelativeDocumentMoniker": "Testorder-service\\Service\\Implement\\TestResultService.cs",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Service\\Implement\\TestResultService.cs",
+              "RelativeToolTip": "Testorder-service\\Service\\Implement\\TestResultService.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T06:39:02.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "FlaggingConfigService.cs",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Service\\Implement\\FlaggingConfigService.cs",
+              "RelativeDocumentMoniker": "Testorder-service\\Service\\Implement\\FlaggingConfigService.cs",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Service\\Implement\\FlaggingConfigService.cs",
+              "RelativeToolTip": "Testorder-service\\Service\\Implement\\FlaggingConfigService.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAswGIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T06:38:22.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "BloodSampleService.cs",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Service\\Implement\\BloodSampleService.cs",
+              "RelativeDocumentMoniker": "Testorder-service\\Service\\Implement\\BloodSampleService.cs",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Service\\Implement\\BloodSampleService.cs",
+              "RelativeToolTip": "Testorder-service\\Service\\Implement\\BloodSampleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T06:37:28.062Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ResultCommentsProfile.cs",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Mapping\\Profiles\\ResultCommentsProfile.cs",
+              "RelativeDocumentMoniker": "Testorder-service\\Mapping\\Profiles\\ResultCommentsProfile.cs",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Mapping\\Profiles\\ResultCommentsProfile.cs",
+              "RelativeToolTip": "Testorder-service\\Mapping\\Profiles\\ResultCommentsProfile.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T06:36:25.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "FlaggingLogsProfile.cs",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Mapping\\Profiles\\FlaggingLogsProfile.cs",
+              "RelativeDocumentMoniker": "Testorder-service\\Mapping\\Profiles\\FlaggingLogsProfile.cs",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Mapping\\Profiles\\FlaggingLogsProfile.cs",
+              "RelativeToolTip": "Testorder-service\\Mapping\\Profiles\\FlaggingLogsProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T06:35:53.186Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "FlaggingConfigsProfile.cs",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Mapping\\Profiles\\FlaggingConfigsProfile.cs",
+              "RelativeDocumentMoniker": "Testorder-service\\Mapping\\Profiles\\FlaggingConfigsProfile.cs",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Mapping\\Profiles\\FlaggingConfigsProfile.cs",
+              "RelativeToolTip": "Testorder-service\\Mapping\\Profiles\\FlaggingConfigsProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T06:35:28.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "TestParametersProfile.cs",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Mapping\\Profiles\\TestParametersProfile.cs",
+              "RelativeDocumentMoniker": "Testorder-service\\Mapping\\Profiles\\TestParametersProfile.cs",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Mapping\\Profiles\\TestParametersProfile.cs",
+              "RelativeToolTip": "Testorder-service\\Mapping\\Profiles\\TestParametersProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T06:34:58.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "TestResultsProfile.cs",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Mapping\\Profiles\\TestResultsProfile.cs",
+              "RelativeDocumentMoniker": "Testorder-service\\Mapping\\Profiles\\TestResultsProfile.cs",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Mapping\\Profiles\\TestResultsProfile.cs",
+              "RelativeToolTip": "Testorder-service\\Mapping\\Profiles\\TestResultsProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T06:34:31.385Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BloodSamplesProfile.cs",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Mapping\\Profiles\\BloodSamplesProfile.cs",
+              "RelativeDocumentMoniker": "Testorder-service\\Mapping\\Profiles\\BloodSamplesProfile.cs",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Mapping\\Profiles\\BloodSamplesProfile.cs",
+              "RelativeToolTip": "Testorder-service\\Mapping\\Profiles\\BloodSamplesProfile.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAmwBQAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T06:33:21.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "StringToLocalDateTime.cs",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Mapping\\Converters\\StringToLocalDateTime.cs",
+              "RelativeDocumentMoniker": "Testorder-service\\Mapping\\Converters\\StringToLocalDateTime.cs",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Mapping\\Converters\\StringToLocalDateTime.cs",
+              "RelativeToolTip": "Testorder-service\\Mapping\\Converters\\StringToLocalDateTime.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T06:32:20.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "PatientMappingProfile.cs",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Patient-service\\MappingProfiles\\PatientMappingProfile.cs",
+              "RelativeDocumentMoniker": "Patient-service\\MappingProfiles\\PatientMappingProfile.cs",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Patient-service\\MappingProfiles\\PatientMappingProfile.cs",
+              "RelativeToolTip": "Patient-service\\MappingProfiles\\PatientMappingProfile.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwC8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T06:27:37.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Program.cs",
+              "RelativeDocumentMoniker": "Testorder-service\\Program.cs",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Program.cs",
+              "RelativeToolTip": "Testorder-service\\Program.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAQwDsAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T06:05:55.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "FlaggingLogService.cs",
+              "DocumentMoniker": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Service\\Implement\\FlaggingLogService.cs",
+              "RelativeDocumentMoniker": "Testorder-service\\Service\\Implement\\FlaggingLogService.cs",
+              "ToolTip": "D:\\Project\\LMSystem (4)\\LMSystem (1)\\LMSystem\\Testorder-service\\Service\\Implement\\FlaggingLogService.cs",
+              "RelativeToolTip": "Testorder-service\\Service\\Implement\\FlaggingLogService.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAwCAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T06:05:13.985Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 591,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:20:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

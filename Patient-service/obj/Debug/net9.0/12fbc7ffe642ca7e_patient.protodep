@@ -1,0 +1,4 @@
+obj\Debug\net9.0\Protos/Patient.cs \
+obj\Debug\net9.0\Protos/PatientGrpc.cs: C:/Users/Admin/.nuget/packages/grpc.tools/2.72.0/build/native/include/google/protobuf/timestamp.proto\
+ Protos/common.proto\
+ Protos/patient.proto

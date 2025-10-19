@@ -1,0 +1,305 @@
+{
+  "Routes": [
+    // ================= IAM SERVICE =================
+    {
+      "DownstreamPathTemplate": "/api/auth/login",
+      "UpstreamPathTemplate": "/gateway/iam/auth/login",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5000
+        }
+      ],
+      "TimeoutValue": 8000
+    },
+    {
+      "DownstreamPathTemplate": "/api/auth/register",
+      "UpstreamPathTemplate": "/gateway/iam/auth/register",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5000
+        }
+      ],
+      "TimeoutValue": 8000
+    },
+    {
+      "DownstreamPathTemplate": "/api/iam/{everything}",
+      "UpstreamPathTemplate": "/gateway/iam/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5000
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 5,
+        "DurationOfBreak": 3000,
+        "TimeoutValue": 8000
+      }
+    },
+
+    // ================= PATIENT SERVICE =================
+    // PatientsController
+    {
+      "DownstreamPathTemplate": "/api/patients",
+      "UpstreamPathTemplate": "/gateway/patient",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5109
+        }
+      ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 5000,
+        "TimeoutValue": 10000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/patients/{everything}",
+      "UpstreamPathTemplate": "/gateway/patient/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5109
+        }
+      ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 5000,
+        "TimeoutValue": 10000
+      }
+    },
+
+    // LabCriteriaController
+    {
+      "DownstreamPathTemplate": "/api/patients/lab-criteria",
+      "UpstreamPathTemplate": "/gateway/patient/lab-criteria",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5109
+        }
+      ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 5000,
+        "TimeoutValue": 10000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/patients/lab-criteria/{everything}",
+      "UpstreamPathTemplate": "/gateway/patient/lab-criteria/{everything}",
+      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5109
+        }
+      ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 5000,
+        "TimeoutValue": 10000
+      }
+    },
+
+    // LabTestsController
+    {
+      "DownstreamPathTemplate": "/api/patients/lab-tests",
+      "UpstreamPathTemplate": "/gateway/patient/lab-tests",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5109
+        }
+      ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 5000,
+        "TimeoutValue": 10000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/patients/lab-tests/{everything}",
+      "UpstreamPathTemplate": "/gateway/patient/lab-tests/{everything}",
+      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5109
+        }
+      ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 5000,
+        "TimeoutValue": 10000
+      }
+    },
+
+    // ================= MEDICAL RECORDS SERVICE =================
+    {
+      "DownstreamPathTemplate": "/api/medical-records",
+      "UpstreamPathTemplate": "/gateway/medical-records",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5109
+        }
+      ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 5000,
+        "TimeoutValue": 10000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/medical-records/{everything}",
+      "UpstreamPathTemplate": "/gateway/medical-records/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5109
+        }
+      ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 5000,
+        "TimeoutValue": 10000
+      }
+    },
+    // Optional: Custom endpoints for MedicalRecordsController (e.g., search, by-patient)
+    {
+      "DownstreamPathTemplate": "/api/medical-records/search",
+      "UpstreamPathTemplate": "/gateway/medical-records/search",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5109
+        }
+      ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 5000,
+        "TimeoutValue": 10000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/medical-records/by-patient/{patientId}",
+      "UpstreamPathTemplate": "/gateway/medical-records/by-patient/{patientId}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5109
+        }
+      ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 5000,
+        "TimeoutValue": 10000
+      }
+    },
+
+    // ================= ACCOUNT SERVICE =================
+    {
+      "DownstreamPathTemplate": "/api/account",
+      "UpstreamPathTemplate": "/gateway/admin/accounts",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5000
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 5,
+        "DurationOfBreak": 3000,
+        "TimeoutValue": 8000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/account/{everything}",
+      "UpstreamPathTemplate": "/gateway/admin/accounts/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5000
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 5,
+        "DurationOfBreak": 3000,
+        "TimeoutValue": 8000
+      }
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/test/{everything}",
+      "UpstreamPathTemplate": "/gateway/testorder/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5038
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/test",
+      "UpstreamPathTemplate": "/gateway/testorder",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5038
+        }
+      ]
+    }
+  ],
+    "GlobalConfiguration": {
+        "BaseUrl": "https://localhost:7000",
+        "RequestIdKey": "OcRequestId"
+    }
+}

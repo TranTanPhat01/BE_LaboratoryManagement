@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcAuth";
+
+service AuthService {
+  rpc QuickRegister (QuickRegisterRequest) returns (QuickRegisterResponse);
+}
+
+message QuickRegisterRequest {
+  string email = 1;
+}
+
+message QuickRegisterResponse {
+  string message = 1;
+}

@@ -1,0 +1,46 @@
+syntax = "proto3";
+package ev.v1.lab;
+option csharp_namespace = "LabServer";
+
+import "google/protobuf/timestamp.proto";
+import "common.proto";
+
+service LabService {
+  rpc CreateLabTest(CreateLabTestRequest) returns (LabTestResponse);
+  rpc GetLabTest(GetByIdRequest) returns (LabTestResponse);
+  rpc ListLabTests(ListLabTestsRequest) returns (ListLabTestsResponse);
+
+  rpc CreateCriterion(CreateCriterionRequest) returns (LabCriterionResponse);
+  rpc GetCriterion(GetByIdRequest) returns (LabCriterionResponse);
+  rpc ListCriteria(ListCriteriaRequest) returns (ListCriteriaResponse);
+}
+
+message LabTest {
+  string id = 1;
+  string test_name = 2;
+  string description = 3;
+  string price = 4; // decimal as string
+  google.protobuf.Timestamp created_at = 5;
+  repeated string criteria_ids = 6;
+}
+
+message LabCriterion {
+  string id = 1;
+  string criteria_name = 2;
+  string unit = 3;
+  string reference_range = 4;
+  google.protobuf.Timestamp created_at = 5;
+}
+
+// Requests / Responses
+message CreateLabTestRequest { LabTest test = 1; }
+message LabTestResponse { LabTest test = 1; string error = 2; }
+message ListLabTestsRequest { int32 page = 1; int32 page_size = 2; }
+message ListLabTestsResponse { repeated LabTest tests = 1; int32 total = 2; }
+
+message CreateCriterionRequest { LabCriterion criterion = 1; }
+message LabCriterionResponse { LabCriterion criterion = 1; string error = 2; }
+message ListCriteriaRequest { int32 page = 1; int32 page_size = 2; }
+message ListCriteriaResponse { repeated LabCriterion criteria = 1; int32 total = 2; }
+
+message GetByIdRequest { string id = 1; }

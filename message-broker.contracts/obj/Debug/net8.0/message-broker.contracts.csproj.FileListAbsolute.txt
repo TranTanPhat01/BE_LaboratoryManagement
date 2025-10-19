@@ -1,0 +1,11 @@
+C:\Users\VicTus\Documents\Kì 6\LMSystem\LMSystem\message-broker.contracts\bin\Debug\net8.0\message-broker.contracts.deps.json
+C:\Users\VicTus\Documents\Kì 6\LMSystem\LMSystem\message-broker.contracts\bin\Debug\net8.0\message-broker.contracts.dll
+C:\Users\VicTus\Documents\Kì 6\LMSystem\LMSystem\message-broker.contracts\bin\Debug\net8.0\message-broker.contracts.pdb
+C:\Users\VicTus\Documents\Kì 6\LMSystem\LMSystem\message-broker.contracts\obj\Debug\net8.0\message-broker.contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VicTus\Documents\Kì 6\LMSystem\LMSystem\message-broker.contracts\obj\Debug\net8.0\message-broker.contracts.AssemblyInfoInputs.cache
+C:\Users\VicTus\Documents\Kì 6\LMSystem\LMSystem\message-broker.contracts\obj\Debug\net8.0\message-broker.contracts.AssemblyInfo.cs
+C:\Users\VicTus\Documents\Kì 6\LMSystem\LMSystem\message-broker.contracts\obj\Debug\net8.0\message-broker.contracts.csproj.CoreCompileInputs.cache
+C:\Users\VicTus\Documents\Kì 6\LMSystem\LMSystem\message-broker.contracts\obj\Debug\net8.0\message-broker.contracts.dll
+C:\Users\VicTus\Documents\Kì 6\LMSystem\LMSystem\message-broker.contracts\obj\Debug\net8.0\refint\message-broker.contracts.dll
+C:\Users\VicTus\Documents\Kì 6\LMSystem\LMSystem\message-broker.contracts\obj\Debug\net8.0\message-broker.contracts.pdb
+C:\Users\VicTus\Documents\Kì 6\LMSystem\LMSystem\message-broker.contracts\obj\Debug\net8.0\ref\message-broker.contracts.dll

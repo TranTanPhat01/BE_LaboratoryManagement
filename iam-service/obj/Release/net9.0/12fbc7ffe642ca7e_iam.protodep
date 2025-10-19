@@ -1,0 +1,3 @@
+obj\Release\net9.0\Protos/Iam.cs \
+obj\Release\net9.0\Protos/IamGrpc.cs: C:/Users/VicTus/.nuget/packages/grpc.tools/2.72.0/build/native/include/google/protobuf/timestamp.proto\
+ Protos/iam.proto

@@ -1,0 +1,983 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Testorder-service",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/test/flagging/configs": {
+      "get": {
+        "tags": [
+          "FlaggingConfigs"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "FlaggingConfigs"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpsertFlaggingConfigDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpsertFlaggingConfigDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpsertFlaggingConfigDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/test/flagging/configs/{id}": {
+      "get": {
+        "tags": [
+          "FlaggingConfigs"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/test/flagging/configs/by-analyte/{code}": {
+      "get": {
+        "tags": [
+          "FlaggingConfigs"
+        ],
+        "parameters": [
+          {
+            "name": "code",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/test/flagging/configs/{id}/set-active": {
+      "put": {
+        "tags": [
+          "FlaggingConfigs"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "active",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "updatedBy",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/test/flagging/logs/by-config/{configId}": {
+      "get": {
+        "tags": [
+          "FlaggingLogs"
+        ],
+        "parameters": [
+          {
+            "name": "configId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/test/comments/by-result/{resultId}": {
+      "get": {
+        "tags": [
+          "ResultComments"
+        ],
+        "parameters": [
+          {
+            "name": "resultId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/test/comments/by-sample/{sampleId}": {
+      "get": {
+        "tags": [
+          "ResultComments"
+        ],
+        "parameters": [
+          {
+            "name": "sampleId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/test/comments": {
+      "post": {
+        "tags": [
+          "ResultComments"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpsertResultCommentDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpsertResultCommentDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpsertResultCommentDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/test/bloodsamples": {
+      "get": {
+        "tags": [
+          "Samples"
+        ],
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 20
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Samples"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateBloodSampleDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateBloodSampleDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateBloodSampleDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/test/bloodsamples/{id}": {
+      "get": {
+        "tags": [
+          "Samples"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Samples"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateBloodSampleDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateBloodSampleDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateBloodSampleDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/": {
+      "get": {
+        "tags": [
+          "Testorder-service"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/test/parameters/by-result/{resultId}": {
+      "get": {
+        "tags": [
+          "TestParameters"
+        ],
+        "parameters": [
+          {
+            "name": "resultId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/test/parameters": {
+      "post": {
+        "tags": [
+          "TestParameters"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTestParameterDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTestParameterDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTestParameterDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/test/parameters/{id}": {
+      "put": {
+        "tags": [
+          "TestParameters"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTestParameterDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTestParameterDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTestParameterDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/test/results/{id}": {
+      "get": {
+        "tags": [
+          "TestResults"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TestResults"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTestResultDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTestResultDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTestResultDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/test/results/by-sample/{sampleId}": {
+      "get": {
+        "tags": [
+          "TestResults"
+        ],
+        "parameters": [
+          {
+            "name": "sampleId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/test/results": {
+      "post": {
+        "tags": [
+          "TestResults"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTestResultDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTestResultDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTestResultDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CreateBloodSampleDto": {
+        "type": "object",
+        "properties": {
+          "sampleCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "barcode": {
+            "type": "string",
+            "nullable": true
+          },
+          "patientId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "medicalRecordId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "collectedAt": {
+            "type": "string",
+            "nullable": true
+          },
+          "analyzedAt": {
+            "type": "string",
+            "nullable": true
+          },
+          "resultPublished": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "errorMessage": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateTestParameterDto": {
+        "type": "object",
+        "properties": {
+          "testResultId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "paramName": {
+            "type": "string",
+            "nullable": true
+          },
+          "abbreviation": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "normalRangeMin": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "normalRangeMax": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "normalUnit": {
+            "type": "string",
+            "nullable": true
+          },
+          "genderSpecific": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "maleRangeMin": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "maleRangeMax": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "femaleRangeMin": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "femaleRangeMax": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "flag": {
+            "type": "string",
+            "nullable": true
+          },
+          "flagConfigId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "reagentRefId": {
+            "type": "string",
+            "nullable": true
+          },
+          "reagentCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "reagentLot": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateTestResultDto": {
+        "type": "object",
+        "properties": {
+          "sampleId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "testCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "testName": {
+            "type": "string",
+            "nullable": true
+          },
+          "resultValue": {
+            "type": "string",
+            "nullable": true
+          },
+          "unit": {
+            "type": "string",
+            "nullable": true
+          },
+          "referenceRange": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateBloodSampleDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "collectedAt": {
+            "type": "string",
+            "nullable": true
+          },
+          "analyzedAt": {
+            "type": "string",
+            "nullable": true
+          },
+          "resultPublished": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "errorMessage": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateTestParameterDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "normalRangeMin": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "normalRangeMax": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "normalUnit": {
+            "type": "string",
+            "nullable": true
+          },
+          "genderSpecific": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "maleRangeMin": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "maleRangeMax": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "femaleRangeMin": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "femaleRangeMax": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "flag": {
+            "type": "string",
+            "nullable": true
+          },
+          "flagConfigId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "reagentRefId": {
+            "type": "string",
+            "nullable": true
+          },
+          "reagentCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "reagentLot": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateTestResultDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "resultValue": {
+            "type": "string",
+            "nullable": true
+          },
+          "unit": {
+            "type": "string",
+            "nullable": true
+          },
+          "referenceRange": {
+            "type": "string",
+            "nullable": true
+          },
+          "flag": {
+            "type": "string",
+            "nullable": true
+          },
+          "flagConfigId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "aiReviewedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "aiReviewedAt": {
+            "type": "string",
+            "nullable": true
+          },
+          "reviewedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "reviewedAt": {
+            "type": "string",
+            "nullable": true
+          },
+          "comments": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpsertFlaggingConfigDto": {
+        "type": "object",
+        "properties": {
+          "analyteCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "analyteName": {
+            "type": "string",
+            "nullable": true
+          },
+          "normalMin": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "normalMax": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "criticalMin": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "criticalMax": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "unit": {
+            "type": "string",
+            "nullable": true
+          },
+          "flagType": {
+            "type": "string",
+            "nullable": true
+          },
+          "version": {
+            "type": "string",
+            "nullable": true
+          },
+          "updatedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "active": {
+            "type": "boolean",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpsertResultCommentDto": {
+        "type": "object",
+        "properties": {
+          "resultId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "sampleId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "commentedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "commentText": {
+            "type": "string",
+            "nullable": true
+          },
+          "isEdited": {
+            "type": "boolean",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

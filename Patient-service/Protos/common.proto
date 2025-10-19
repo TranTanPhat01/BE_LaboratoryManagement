@@ -1,0 +1,34 @@
+syntax = "proto3";
+package ev.v1.common;
+option csharp_namespace = "CommonServer";
+
+import "google/protobuf/timestamp.proto";
+
+// Generic request to fetch by ID (string to allow GUIDs or custom keys).
+message GetByIdRequest {
+  string id = 1;
+}
+
+// Generic list request with simple pagination and optional free-text query.
+message ListRequest {
+  int32 page = 1;        // 1-based; server should clamp to >=1
+  int32 page_size = 2;   // server should clamp to a max (e.g., 100)
+  string query = 3;      // optional search/filter string
+}
+
+// Generic metadata returned alongside list responses.
+message ListResponseMeta {
+  int32 total = 1;       // total items (for pagination UI)
+}
+
+// Optional standard error envelope if you want to carry error info inline.
+message Error {
+  string code = 1;       // e.g., "NOT_FOUND", "VALIDATION_FAILED"
+  string message = 2;    // human-readable
+  map<string, string> details = 3; // field -> error
+}
+
+// DateOnly type since protobuf lacks a native date-only; use ISO "YYYY-MM-DD".
+message IsoDate {
+  string value = 1;
+}
